@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curating the Web</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Taviraj" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <meta property="og:url" content="http://localhost:8080/" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <a href="/" class="navbar-brand" id="brand">RL</a>
+            <ul class="nav navbar-nav">
+                <li><a id="header-nav-buttons" href="/">Home</a></li>
+                <li><a id="header-nav-buttons" href="/about">About</a></li>
+                <li><a id="header-nav-buttons" href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <%- defineContent('hero') %>
+
+    <main>
+        <div class="container">
+            <%- body %>
+        </div>
+    </main>
+
+
+    <footer>
+        Lamadrid. &copy; 2016
+    </footer>
+
+</body>
+</html>
